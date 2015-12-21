@@ -77,12 +77,4 @@ public class GridLinkController : MonoBehaviour
 			}
 		}
 	}
-
-	void whoAmINextTo(int index)
-	{
-		if (index < gridWidth)
-		{
-		    
-		}
-	}
 }
