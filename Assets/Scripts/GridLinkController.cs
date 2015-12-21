@@ -78,3 +78,4 @@ public class GridLinkController : MonoBehaviour
 		}
 	}
 }
+//i make changes now.
