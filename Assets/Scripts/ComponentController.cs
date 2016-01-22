@@ -88,7 +88,18 @@ public class ComponentController : MonoBehaviour
 	{
 		componentList.Add(new Resistor("Resistor", "LR_Resistor", false, false, true, true, Resources.Load <Sprite> ("Sprites/LR_Resistor")));
 		componentList.Add(new Battery("Right", "Down", "Battery", "RD_Battery", false, true, true, false, Resources.Load <Sprite> ("Sprites/RD_Battery")));
-		componentList.Add(new Component("Wire", "LD_Wire", false, true, false, true, Resources.Load <Sprite> ("Sprites/LD_Wire")));
+		componentList.Add(new Component("Wire", "LD_Wire", false, true, false, true, Resources.Load<Sprite>("Sprites/LD_Wire")));
+		componentList.Add(new Component("Wire", "LU_Wire", true, false, false, true, Resources.Load<Sprite>("Sprites/LU_Wire")));
+		componentList.Add(new Component("Wire", "RD_Wire", false, true, true, false, Resources.Load<Sprite>("Sprites/RD_Wire")));
+		componentList.Add(new Component("Wire", "RU_Wire", true, false, true, false, Resources.Load<Sprite>("Sprites/RU_Wire")));
+		componentList.Add(new Component("Wire", "RUD_Wire", true, true, true, false, Resources.Load<Sprite>("Sprites/RUD_Wire")));
+		componentList.Add(new Component("Wire", "LUD_Wire", true, true, false, true, Resources.Load<Sprite>("Sprites/LUD_Wire")));
+		componentList.Add(new Component("Wire", "RLD_Wire", false, true, true, true, Resources.Load<Sprite>("Sprites/RLD_Wire")));
+		componentList.Add(new Component("Wire", "RLU_Wire", true, false, true, true, Resources.Load<Sprite>("Sprites/RLU_Wire")));
+		componentList.Add(new Component("Wire", "RLUD_Wire", true, true, true, true, Resources.Load<Sprite>("Sprites/RLUD_Wire")));
+		componentList.Add(new Component("Wire", "RL_Wire", false, false, true, true, Resources.Load<Sprite>("Sprites/RL_Wire")));
+		componentList.Add(new Component("Wire", "UD_Wire", true, true, false, false, Resources.Load<Sprite>("Sprites/UD_Wire")));
+
 
 		loadLevel(1);
 	}
