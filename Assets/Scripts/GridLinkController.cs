@@ -19,7 +19,7 @@ public class GridLinkController : MonoBehaviour
 			gridSlots.Add(Instantiate(gridObject, Vector3.zero, Quaternion.identity) as GameObject);
 			gridSlots[i].name = "Slot" + i;
 			gridSlots[i].transform.SetParent(this.transform, false);
-			gridSlots[i].GetComponentInChildren<Text>().text = i.ToString();
+			//gridSlots[i].GetComponentInChildren<Text>().text = i.ToString();
         }
 
 		Debug.Log ("gridsize:"+gridSlots.Count+"  GridWidth:"+gridWidth);
@@ -52,7 +52,7 @@ public class GridLinkController : MonoBehaviour
 			{
 				if (j == ((gridWidth * k) - 1))
 				{
-					Debug.Log(j);
+					//Debug.Log(j);
 					onRightEdge = true;
 				}
 			}
@@ -67,7 +67,7 @@ public class GridLinkController : MonoBehaviour
 			{
 				if (j == (gridWidth * k))
 				{
-					Debug.Log(j);
+					//Debug.Log(j);
 					onLeftEdge = true;
 				}
 			}
